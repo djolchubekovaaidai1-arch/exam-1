@@ -1,0 +1,53 @@
+.about {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about__title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.about__subtitle {
+  font-size: 16px;
+  color: #8b8b8b;
+  margin-bottom: 60px;
+}
+
+.about__items {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.about__item {
+  max-width: 260px;
+}
+
+.about__icon {
+  width: 70px;
+  height: 70px;
+  background-color: #cfe3e1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: #000;
+}
+
+.about__item-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.about__item-text {
+  font-size: 14px;
+  color: #8b8b8b;
+  line-height: 1.6;
+}

@@ -1,0 +1,80 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+
+.header__logo {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+/* NAV */
+
+.header__nav {
+  display: flex;
+  gap: 40px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9b9b9b;
+}
+
+.header__nav a.active {
+  color: #000;
+  font-weight: 500;
+}
+
+/* ACTIONS */
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.divider {
+  width: 1px;
+  height: 20px;
+  background-color: #ccc;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__container {
+    padding: 20px;
+  }
+}
