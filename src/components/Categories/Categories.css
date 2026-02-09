@@ -53,7 +53,7 @@
 
 /* Hover подъём */
 .card:hover {
-  transform: translateY(-70px);
+  transform: translateY(-10px);
 }
 
 .card-center:hover {
@@ -75,8 +75,8 @@
 
 /* Zoom + тень */
 .card:hover img {
-  transform: scale(1.07);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Текст */

@@ -1,57 +1,58 @@
 import "./Hero.css";
-import photo from "../../assets/photo.png";
+import photo from "../../assets/photo.svg";
 import lupa from "../../assets/lupa.svg";
 import arrow1 from "../../assets/arrow1.svg";
 import arrow2 from "../../assets/arrow2.svg";
+import photo2 from "../../assets/photo2.svg";
+import line from "../../assets/line.svg"
 
 export default function Hero() {
   return (
-    <section className="hero">
-      <div className="hero__left">
-        <h1 className="hero__title">
-          Buy your <br /> dream plants
-        </h1>
+   <main className="container">
+        <div className="main">
+          <div className="main-l">
+            <h1>Buy your dream plants</h1>
 
-        <div className="hero__stats">
-          <div className="stat">
-            <span className="stat__number">50+</span>
-            <span className="stat__text">Plant Species</span>
+            <div className="counts">
+              <div>
+                <span>50+</span>
+                <h5>Plant Species</h5>
+              </div>
+
+              <img src={line} alt="" />
+
+              <div>
+                <span>100+</span>
+                <h5>Customers</h5>
+              </div>
+
+            </div>
+
+            <div className="box">
+              <input type="text" placeholder="What are you looking for?" />
+              <button><img src={lupa} alt="" /></button>
+            </div>
+
           </div>
 
-          <div className="stat__line"></div>
-
-          <div className="stat">
-            <span className="stat__number">100+</span>
-            <span className="stat__text">Customers</span>
+          <div className="mainfon">
+            <img src={photo2} alt="" />
           </div>
-        </div>
 
-        <div className="hero__search">
-          <input
-            type="text"
-            placeholder="What are you looking for?"
-          />
-          <button className="search__btn">
-            <img src={lupa} alt="" />
-          </button>
-        </div>
-      </div>
+          <div className="mainplant">
+            <img src={photo} alt="" />
+          </div>
 
-      <div className="hero__right">
-        <div className="hero__circle">
-          <img
-            src={photo}
-            alt="plant"
-          />
-        </div>
-
-        <div className="arrow arrow--top">
+          <div className="arrow1">
             <img src={arrow1} alt="" />
-        </div>
-        <div className="arrow arrow--bottom">
+          </div>
+
+          <div className="arrow2">
             <img src={arrow2} alt="" />
+          </div>
+
         </div>
-      </div>
-    </section>
+
+      </main >
   );
 }
